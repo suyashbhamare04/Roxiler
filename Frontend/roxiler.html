@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxiler Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="transactions-table">
+            <h2 style="text-align: center;">Transactions</h2>
+            <div class="transactions-table-header">
+                <select id="month-dropdown">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input type="text" id="search-input" placeholder="Search transactions...">
+            </div>
+            <table id="transactions-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Sold</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id="transactions-body"></tbody>
+            </table>
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
+        </div>
+        <div class="statistics">
+            <h2>Statistics</h2>
+            <div id="statistics-container" class="statistics-container"></div>
+        </div>
+        <div class="bar-chart">
+            <h2 style="text-align: center;">Bar Chart</h2>
+            <div id="bar-chart-container">
+                <canvas id="myBarChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="roxiler.js"></script>
+</body>
+</html>

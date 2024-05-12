@@ -1,0 +1,5 @@
+package com.roxiler.assignment.Entity;
+
+public class BarChartData {
+
+}

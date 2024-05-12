@@ -1,0 +1,9 @@
+package com.roxiler.assignment.entity;
+
+public class Statistics {
+
+	 private int totalSaleAmount;
+	 private int totalSoldItems;
+	 private int totalNotSoldItems;
+	
+}
